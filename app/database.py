@@ -26,3 +26,10 @@ criar_sessao = sessionmaker(bind=mecanismo_banco, autoflush=False, autocommit=Fa
 
 class BaseBanco(DeclarativeBase):
     pass
+
+def obter_sessao_banco():
+    sessao = criar_sessao()
+    try:
+        yield sessao
+    finally:
+        sessao.close()
