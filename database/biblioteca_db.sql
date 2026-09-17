@@ -27,6 +27,12 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `livros`
 --
 
+CREATE DATABASE IF NOT EXISTS biblioteca_db
+  DEFAULT CHARACTER SET utf8mb4;
+
+USE biblioteca_db;
+
+
 CREATE TABLE `livros` (
   `id` int(11) NOT NULL,
   `titulo` varchar(150) NOT NULL,
