@@ -1,10 +1,10 @@
-Criando API de livros 📔
+# Criando API de livros 📔
 
 API desenvolvida em Python utilizando FastAPI, com integração ao banco de dados MySQL para cadastro, consulta, atualização e exclusão de livros.
 
-Usando algumas tecnologias e suas funções:
+O projeto também possui um frontend desenvolvido para consumir a API e permitir a utilização do CRUD de livros diretamente pelo navegador.
 
-svg
+Usando algumas tecnologias e suas funções:
 
 🟣 fastapi: cria as rotas e disponibiliza a documentação automática;
 
@@ -18,9 +18,11 @@ svg
 
 🟣 python-dotenv: auxilia na leitura de variáveis armazenadas em arquivos .env;
 
-🟣 mysql: banco de dados utilizado para armazenar os livros.
+🟣 mysql: banco de dados utilizado para armazenar os livros;
 
-Banco de Dados 🗄️
+🟣 frontend: interface utilizada para consumir a API e realizar as operações de CRUD.
+
+## Banco de Dados 🗄️
 
 Conexão com Banco de Dados feita e funcionando!
 
@@ -38,7 +40,7 @@ A aplicação possui uma conexão configurada com o MySQL através do SQLAlchemy
 
 🟣 preparação da estrutura para operações completas de CRUD.
 
-Rotas 📡
+## Rotas 📡
 
 A API possui atualmente as seguintes rotas:
 
@@ -62,7 +64,35 @@ A API possui atualmente as operações completas de CRUD:
 
 🟢 Delete: exclusão de livros.
 
-Testes 🧪
+## Frontend 💻
+
+O projeto possui uma interface frontend criada para consumir a API de livros.
+
+A interface permite visualizar os livros cadastrados e utilizar as principais operações do CRUD diretamente pelo navegador.
+
+🟣 criação da estrutura inicial do frontend;
+
+🟣 criação da página de livros;
+
+🟣 desenvolvimento do layout da interface;
+
+🟣 conexão do frontend com a API;
+
+🟣 integração das operações de CRUD;
+
+🟣 validação do cadastro de livros pelo frontend;
+
+🟣 validação da consulta e listagem de livros pelo frontend;
+
+🟣 validação da atualização de livros pelo frontend;
+
+🟣 validação da exclusão de livros pelo frontend;
+
+🟣 execução e validação do frontend localmente.
+
+O frontend utiliza o contrato da API para realizar as requisições e permite testar o funcionamento do CRUD através de uma interface gráfica.
+
+## Testes 🧪
 
 Foram realizados testes durante o desenvolvimento para verificar o funcionamento completo da aplicação.
 
@@ -82,27 +112,33 @@ Foram realizados testes durante o desenvolvimento para verificar o funcionamento
 
 🟣 confirmação das rotas completas do CRUD;
 
-🟣 validação do CRUD completo através do Swagger.
+🟣 validação do CRUD completo através do Swagger;
 
-Documentação 📖
+🟣 validação da integração entre frontend e API;
+
+🟣 execução do frontend localmente;
+
+🟣 validação do CRUD completo através do frontend.
+
+## Documentação 📖
 
 A API utiliza a documentação automática disponibilizada pelo FastAPI.
 
 🟣 Swagger UI:
 
-http://127.0.0.1:8000/docs
+`/docs`
 
 🟣 ReDoc:
 
-http://127.0.0.1:8000/redoc
+`/redoc`
 
 A documentação permite visualizar as rotas disponíveis, consultar o contrato da API e realizar testes diretamente pelo navegador.
 
-O contrato da API foi validado para preparar a integração com o frontend.
+O contrato da API foi validado e utilizado para realizar a integração com o frontend.
 
-Desenvolvimento 🚀
+## Desenvolvimento 🚀
 
-O projeto foi desenvolvido em etapas, começando pela criação do repositório e preparação do ambiente, passando pela configuração da API e do banco de dados, criação das operações de cadastro e consulta, até a implementação do CRUD completo de livros.
+O projeto foi desenvolvido em etapas, começando pela criação do repositório e preparação do ambiente, passando pela configuração da API e do banco de dados, criação das operações de cadastro e consulta, implementação do CRUD completo e, posteriormente, desenvolvimento e integração do frontend.
 
 🟣 preparação do repositório;
 
@@ -158,57 +194,79 @@ O projeto foi desenvolvido em etapas, começando pela criação do repositório 
 
 🟣 validação do CRUD completo através do Swagger;
 
-🟣 confirmação do contrato da API para integração com o frontend.
+🟣 confirmação do contrato da API para integração com o frontend;
 
-Commits 📌
+🟣 preparação da estrutura do frontend;
 
-📅 Início do projeto
+🟣 criação da página de livros;
 
-chore: inicia repositorio da api de livros
-chore: prepara pasta do projeto
-chore: adiciona dependencias da api
-chore: cria estrutura inicial da aplicacao
-chore: protege configuracoes locais
+🟣 desenvolvimento do layout do frontend;
 
+🟣 conexão do frontend com o CRUD de livros;
 
-📅 Configuração da API e Banco de Dados
+🟣 documentação do funcionamento do frontend;
 
-feat: configura conexao com mysql
-feat: cria aplicacao fastapi e rota de saude
-test: valida inicializacao da api
-test: valida inicializacao da api
-test: valida conexao com banco de dados
-feat readme
+🟣 execução do frontend localmente;
 
+🟣 validação do CRUD completo através do frontend.
 
-📅 Desenvolvimento das funcionalidades
+## Commits 📌
 
-chore: prepara ambiente para a parte 2
-feat: cria modelo de livros
-feat: adiciona schemas de livros
-feat: cria sessao do banco
-feat: cria rota para cadastrar livros
-feat: cria rota para listar livros
-feat: cria consulta de livro por id
-atualizando req.txt
-Fix(Banco de dados)
-test: valida rotas post e get
-docs: atualiza banco apos rotas de cadastro e consulta
+### 📅 Início do projeto
 
+`chore: inicia repositorio da api de livros`
+`chore: prepara pasta do projeto`
+`chore: adiciona dependencias da api`
+`chore: cria estrutura inicial da aplicacao`
+`chore: protege configuracoes locais`
 
-📅 Desenvolvimento do CRUD
+### 📅 Configuração da API e Banco de Dados
 
-chore: prepara ambiente para a parte 3
-fix: padroniza modelo livro
-fix: padroniza schemas de livros
-fix: prepara arquivo principal para crud
-feat: cria rota para atualizar livros
-feat: cria rota para excluir livros
-test: confirma rotas completas do crud
-test: valida crud completo pelo swagger
-docs: confirma contrato da api para frontend
+`feat: configura conexao com mysql`
+`feat: cria aplicacao fastapi e rota de saude`
+`test: valida inicializacao da api`
+`test: valida conexao com banco de dados`
+`feat readme`
 
-Status do projeto 📊
+### 📅 Desenvolvimento das funcionalidades
+
+`chore: prepara ambiente para a parte 2`
+`feat: cria modelo de livros`
+`feat: adiciona schemas de livros`
+`feat: cria sessao do banco`
+`feat: cria rota para cadastrar livros`
+`feat: cria rota para listar livros`
+`feat: cria consulta de livro por id`
+`atualizando req.txt`
+`Fix(Banco de dados)`
+`test: valida rotas post e get`
+`docs: atualiza banco apos rotas de cadastro e consulta`
+
+### 📅 Desenvolvimento do CRUD
+
+`chore: prepara ambiente para a parte 3`
+`fix: padroniza modelo livro`
+`fix: padroniza schemas de livros`
+`fix: prepara arquivo principal para crud`
+`feat: cria rota para atualizar livros`
+`feat: cria rota para excluir livros`
+`test: confirma rotas completas do crud`
+`test: valida crud completo pelo swagger`
+`docs: confirma contrato da api para frontend`
+
+### 📅 Desenvolvimento do Frontend
+
+`docs: prepara integracao do frontend`
+`feat: permite acesso do frontend`
+`chore: cria estrutura do frontend`
+`feat: cria pagina de livros`
+`style: adiciona layout do frontend`
+`feat: conecta frontend ao crud de livros`
+`docs: explica funcionamento do frontend`
+`test: executa frontend localmente`
+`test: valida crud pelo frontend`
+
+## Status do projeto 📊
 
 🟢 API criada;
 
@@ -241,6 +299,20 @@ Status do projeto 📊
 🟢 CRUD completo validado pelo Swagger;
 
 🟢 Contrato da API confirmado para o frontend;
+
+🟢 Estrutura do frontend criada;
+
+🟢 Página de livros criada;
+
+🟢 Layout do frontend implementado;
+
+🟢 Frontend conectado à API;
+
+🟢 CRUD integrado ao frontend;
+
+🟢 Frontend executado localmente;
+
+🟢 CRUD completo validado pelo frontend;
 
 🟢 Documentação atualizada;
 
