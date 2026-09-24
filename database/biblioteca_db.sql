@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 17-Set-2026 às 14:32
+-- Tempo de geração: 24-Set-2026 às 13:08
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -26,9 +26,6 @@ SET time_zone = "+00:00";
 --
 -- Estrutura da tabela `livros`
 --
-CREATE DATABASE IF NOT EXISTS biblioteca_db;
-
-USE biblioteca_db;
 
 CREATE TABLE `livros` (
   `id` int(11) NOT NULL,
@@ -43,7 +40,8 @@ CREATE TABLE `livros` (
 --
 
 INSERT INTO `livros` (`id`, `titulo`, `autor`, `ano_publicacao`, `disponivel`) VALUES
-(2, 'Dom Casmurro', 'Machado de Assis', 1899, 1);
+(2, 'Dom Casmurro', 'Machado de Assis', 1899, 1),
+(4, 'O Hobbit', 'J. R. R. Tolkien', 1937, 1);
 
 --
 -- Índices para tabelas despejadas
@@ -64,7 +62,7 @@ ALTER TABLE `livros`
 -- AUTO_INCREMENT de tabela `livros`
 --
 ALTER TABLE `livros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
